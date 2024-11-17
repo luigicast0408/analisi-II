@@ -1,0 +1,36 @@
+\documentclass{article} % Classe del documento
+\usepackage[utf8]{inputenc} % Per supportare caratteri UTF-8
+\usepackage{amsmath} % Per formule matematiche avanzate
+\usepackage{amssymb} % Per simboli matematici come \forall e \exists
+
+\title{Teoremi e dimostrazioni - 1° capitolo} % Titolo del documento
+\author{Nome Autore} % Autore del documento
+
+\begin{document}
+
+\maketitle % Genera il titolo con autore e titolo
+
+\section{Continuità}
+\subsection{Funzione continua nel punto \( (x_0, y_0) \)}
+
+Sia \( f(x, y) \) una funzione definita su un insieme \( D \subseteq \mathbb{R}^2 \) e sia \( (x_0, y_0) \in D \).
+La funzione \( f \) è \textbf{continua} nel punto \( (x_0, y_0) \) se:
+
+\[
+\forall \varepsilon > 0, \, \exists \, \delta > 0 \, \text{tale che per ogni} \, (x, y) \in D,
+\]
+
+se
+\[
+\sqrt{(x - x_0)^2 + (y - y_0)^2} < \delta,
+\]
+
+allora
+
+\[
+|f(x, y) - f(x_0, y_0)| < \varepsilon.
+\]
+
+In altre parole, per qualsiasi valore positivo \( \varepsilon \), esiste un valore positivo \( \delta \) tale che, se il punto \( (x, y) \) si trova a una distanza minore di \( \delta \) da \( (x_0, y_0) \), allora il valore di \( f(x, y) \) sarà a distanza minore di \( \varepsilon \) dal valore \( f(x_0, y_0) \).
+
+\end{document}
